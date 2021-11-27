@@ -21,15 +21,13 @@ try {
             print('<br>');
         }
         if (strlen($_POST['name']) > 0 || strlen($_POST['content']) > 0) {
+            $name = null;
+            $content = null;
             if (strlen($_POST['name']) > 0) {
                 $name = htmlspecialchars($_POST['name']);
-            } else {
-                $name = null;
             }
             if (strlen($_POST['content']) > 0) {
                 $content = htmlspecialchars($_POST['content']);
-            } else {
-                $content = null;
             }
 
             $sql = 'INSERT into posts (name, content) values (?, ?)';
