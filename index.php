@@ -37,6 +37,10 @@
         </p>
     </form>
 
+    <section class="posts">
+        <?php include('getList.php') ?>
+    </section>
+
     <script src="./assets/js/form.js"></script>
 </body>
 

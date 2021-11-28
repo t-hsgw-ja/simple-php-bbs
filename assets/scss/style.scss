@@ -24,6 +24,7 @@ input:not([type="submit"]), textarea {
  * Utility
  */
 .tal { text-align: left; }
+.tar { text-align: right; }
 .tac { text-align: center; }
 
 
@@ -69,4 +70,35 @@ input:not([type="submit"]), textarea {
 
 .is-required {
     box-shadow: 0 0 3px 1px rgba(214, 0, 0, 0.5) !important;
+}
+
+
+
+.posts {
+    margin: 3rem auto;
+    max-width: 700px;
+}
+
+.post {
+    margin: 1.5rem auto;
+    padding: 1rem 3rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+
+    &__author {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    &__content {
+        padding: 1.5rem;
+        border-bottom: 1px solid #eee;
+        line-height: 1.5;
+    }
+
+    &__date {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
 }
